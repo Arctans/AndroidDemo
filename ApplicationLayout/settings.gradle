@@ -1,0 +1,2 @@
+include ':app', ':textview', ':tablelayoutdemo', ':imageviewdemo', ':simpleadapterdemo', ':recyclerviewdemo', ':progressbardemo', ':viewswitcherdemo'
+rootProject.name='ApplicationLayout'

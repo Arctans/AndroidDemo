@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+<!--    <ProgressBar-->
+<!--        android:layout_width="wrap_content"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        style="@android:style/Widget.ProgressBar.Large"-->
+<!--        />-->
+<!--    <ProgressBar-->
+<!--        android:layout_width="match_parent"-->
+<!--        android:layout_height="wrap_content"-->
+<!--        android:progressDrawable="@drawable/timgx"-->
+<!--        android:max="100"-->
+<!--        style="@android:style/Widget.ProgressBar.Horizontal"-->
+<!--        />-->
+    <ImageView
+         android:layout_height="wrap_content"
+         android:layout_width="wrap_content"
+         android:id="@+id/imageID"
+        android:src="@drawable/timg"
+        />
+    <SeekBar
+        android:id="@+id/seekbarID"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:max="255"
+        android:progress="255"
+        android:tickMark="@drawable/ic_launcher_background"
+        android:outlineSpotShadowColor="#00ff00"
+        />
+
+     <RatingBar
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:numStars="6"
+         android:max="255"
+         android:progress="255"
+         android:stepSize="0.5"
+         android:progressTint="#00ff00"
+
+         />
+
+    <androidx.appcompat.widget.AppCompatRatingBar
+        android:id="@+id/rating_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        style="?attr/ratingBarStyleIndicator"
+        android:isIndicator="false"
+        android:progressTint="#0000ff"
+        />
+
+</LinearLayout>
