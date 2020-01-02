@@ -48,7 +48,7 @@ public class MainActivity extends AppCompatActivity {
         public View getView(int position, View convertView, ViewGroup parent) {
             View view;
             ViewHolder viewHolder;
-            if(convertView!=null){
+            if(convertView==null){
                 view = View.inflate(MainActivity.this,R.layout.labelicon,null);
                 ImageView imageView = view.findViewById(R.id.imageviewID);
                 TextView textView   = view.findViewById(R.id.textviewID);
@@ -104,20 +104,20 @@ public class MainActivity extends AppCompatActivity {
         }
     }
 
-    public void onClick(View view){
-        int id = view.getId();
-        switch (id){
-            case R.id.NextID:
-                break;
-
-            case R.id.PrevID:
-
-                 break;
-
-            default:
-                 break;
-        }
-    }
+//    public void onClick(View view){
+//        int id = view.getId();
+//        switch (id){
+//            case R.id.NextID:
+//                break;
+//
+//            case R.id.PrevID:
+//
+//                 break;
+//
+//            default:
+//                 break;
+//        }
+//    }
 
     public static class ViewHolder {
         ImageView imageView;
